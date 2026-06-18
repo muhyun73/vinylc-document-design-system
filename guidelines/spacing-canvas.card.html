@@ -1,0 +1,42 @@
+<!-- @dsCard group="Spacing" viewport="700x230" name="고정 캔버스 · 컨테이너" subtitle="report 960 가변 / slide 1280×720 고정 / 1P 그리드" -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="../styles.css" />
+<style>
+  body { margin: 0; font-family: var(--font-family); background: var(--white); }
+  .wrap { padding: 22px 24px; display: flex; gap: 18px; align-items: flex-start; }
+  .box { border: 1px solid var(--border-default); }
+  .cap { font-size: 10px; color: var(--gray-500); margin-top: 6px; letter-spacing: .03em; }
+  .cap b { color: var(--text-primary); font-weight: 600; display: block; }
+  .doc { width: 150px; height: 168px; background: var(--gray-50); padding: 12px; position: relative; }
+  .doc .pg { background: var(--white); border: 1px solid var(--gray-200); height: 100%; margin: 0 14px; }
+  .doc .arr { position: absolute; bottom: 4px; left: 14px; right: 14px; border-top: 1px dashed var(--gray-400); }
+  .sld { width: 220px; height: 124px; background: var(--white); border: 1px solid var(--gray-300); padding: 14px; position: relative; }
+  .sld .lbl { font-size: 9px; color: var(--gray-400); letter-spacing: .1em; text-transform: uppercase; }
+  .sld .ratio { position: absolute; bottom: 8px; right: 12px; font-size: 9px; color: var(--gray-400); }
+  .op { width: 150px; height: 124px; background: var(--white); border: 1px solid var(--gray-300); display: grid; grid-template-rows: auto 1fr auto; gap: 6px; padding: 10px; }
+  .op .hd { border-bottom: 1.5px solid var(--black); height: 14px; }
+  .op .bd { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; }
+  .op .c { background: var(--gray-100); }
+  .op .ft { border-top: 1px solid var(--gray-200); height: 8px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div>
+    <div class="box doc"><div class="pg"></div><div class="arr"></div></div>
+    <div class="cap"><b>.report — 가변폭</b>max-width 960 · 92vw 상한</div>
+  </div>
+  <div>
+    <div class="box sld"><span class="lbl">01 — Overview</span><span class="ratio">1280×720</span></div>
+    <div class="cap"><b>.slide — 고정</b>1280×720 16:9</div>
+  </div>
+  <div>
+    <div class="box op"><div class="hd"></div><div class="bd"><div class="c"></div><div class="c"></div><div class="c"></div><div class="c"></div></div><div class="ft"></div></div>
+    <div class="cap"><b>.slide.is-onepager</b>12컬럼 그리드 · PDF 단독</div>
+  </div>
+</div>
+</body>
+</html>

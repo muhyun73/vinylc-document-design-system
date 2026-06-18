@@ -1,0 +1,135 @@
+<!-- @dsCard group="연속문서형 (Document)" viewport="700x760" name="연속문서형 보고서" subtitle="가변폭 · cover / TOC / 섹션 / 카드 / callout / 표 / footer" -->
+<!-- @startingPoint section="Report" subtitle="연속문서형 보고서 (PDF · HTML · docx)" viewport="960x1400" -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>연속문서형 보고서 — VinylC</title>
+<link rel="stylesheet" href="../../styles.css" />
+</head>
+<body>
+<div class="report" data-screen-label="연속문서형">
+
+  <!-- H — 표지 -->
+  <div class="report__cover">
+    <div class="cover__container">
+      <div class="cover__symbol" aria-hidden="true">
+        <img src="../../assets/symbol-white.svg" alt="" />
+      </div>
+      <h1 class="cover__title">AI Native 전환 종합계획</h1>
+      <p class="cover__subtitle">AI디자인연구소 운영 방안</p>
+      <div class="cover__meta">
+        <span class="cover__meta-item"><span class="cover__meta-label">문서</span><span>종합계획 보고서</span></span>
+        <span class="cover__meta-item"><span class="cover__meta-label">작성</span><span>2026.06 · VinylC</span></span>
+        <span class="cover__meta-item"><span class="cover__meta-label">버전</span><span>v1.0</span></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- 본문 카드 (가변폭) -->
+  <div class="report__content">
+
+    <!-- TOC -->
+    <div class="toc mb-lg">
+      <div class="toc__item"><span class="toc__num">01</span><span>배경 — 전환의 필요성</span></div>
+      <div class="toc__item"><span class="toc__num">02</span><span>현황 진단 — 도구·프로세스</span></div>
+      <div class="toc__item"><span class="toc__num">03</span><span>실행 과제 — 우선순위</span></div>
+      <div class="toc__item"><span class="toc__num">04</span><span>기대 효과 — KPI</span></div>
+    </div>
+
+    <!-- 01 배경 -->
+    <section class="section">
+      <h2 class="section__title">01 — 배경</h2>
+      <p class="section__lead">생성형 AI 도입으로 디자인 산출물의 생산 방식이 재편되고 있다. 본 계획은 전환의 방향과 운영 체계를 정의한다.</p>
+      <div class="prose">
+        <p>팀별로 상이한 도구 체계를 사용하면서 산출물의 품질 편차와 핸드오프 비용이 누적되고 있다. <strong>표준화된 디자인 시스템과 AI 워크플로</strong>를 통해 이를 해소한다.</p>
+      </div>
+
+      <div class="numbered-card">
+        <div class="numbered-card__num">01</div>
+        <div>
+          <h3 class="numbered-card__title">도구 표준화 부재</h3>
+          <p class="numbered-card__body">팀마다 다른 도구·템플릿을 사용해 산출물 일관성이 낮다.</p>
+          <div class="numbered-card__note">핵심: 단일 SSOT 부재가 편차의 근본 원인이다.</div>
+        </div>
+      </div>
+      <div class="numbered-card numbered-card--thin">
+        <div class="numbered-card__num">02</div>
+        <div>
+          <h3 class="numbered-card__title">핸드오프 비용</h3>
+          <p class="numbered-card__body">디자인-개발 간 재작업이 반복되어 리드타임이 길다.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 02 현황 진단 -->
+    <section class="section">
+      <h2 class="section__title">02 — 현황 진단</h2>
+      <div class="group-header">2.1 핵심 축</div>
+      <div class="card-grid">
+        <div class="grid-card">
+          <span class="tag grid-card__tag">도구</span>
+          <h3 class="grid-card__title">도구 일원화</h3>
+          <p class="grid-card__eg">예: 단일 디자인 시스템</p>
+          <p class="grid-card__body">컴포넌트 SSOT를 중심으로 도구를 정렬한다.</p>
+        </div>
+        <div class="grid-card">
+          <span class="tag grid-card__tag">프로세스</span>
+          <h3 class="grid-card__title">핸드오프</h3>
+          <p class="grid-card__eg">예: 토큰 기반 전달</p>
+          <p class="grid-card__body">토큰·컴포넌트 계약으로 재작업을 줄인다.</p>
+        </div>
+        <div class="grid-card grid-card--dark">
+          <span class="tag grid-card__tag">역량</span>
+          <h3 class="grid-card__title">AI 활용</h3>
+          <p class="grid-card__body">프롬프트·검증 루프를 팀 표준으로 내재화한다.</p>
+        </div>
+      </div>
+
+      <h3 class="subsection__title">2.2 조직 구성</h3>
+      <div class="label-row"><div class="label-row__label">연구소</div><div class="label-row__content">AI디자인연구소 · 12명 (리서치 4 · 디자인 6 · 엔지니어링 2)</div></div>
+      <div class="label-row"><div class="label-row__label">운영</div><div class="label-row__content">분기 OKR · 격주 디자인 크리틱 · 월간 시스템 리뷰</div></div>
+    </section>
+
+    <!-- 03 실행 과제 -->
+    <section class="section">
+      <h2 class="section__title">03 — 실행 과제</h2>
+      <div class="border-item">
+        <div class="border-item__title">단일 SSOT 수립</div>
+        <div class="border-item__desc">컴포넌트·토큰을 단일 문서로 통합하고 byte-for-byte 결정형 자산으로 관리한다.</div>
+      </div>
+      <div class="border-item">
+        <div class="border-item__title">표시유형 체계 적용</div>
+        <div class="border-item__desc">연속문서형·프리젠테이션형·1페이지형 3축으로 산출물을 분기한다.</div>
+      </div>
+
+      <div class="callout mt-md">
+        <div class="callout__title">핵심 결론</div>
+        <div class="callout__body">표시유형 ↔ 컨테이너는 1:1이며, 가변폭은 연속문서형에만 적용한다. 공통 4자산은 분기 없이 공유한다.</div>
+      </div>
+    </section>
+
+    <!-- 04 KPI -->
+    <section class="section">
+      <h2 class="section__title">04 — 기대 효과</h2>
+      <table>
+        <thead>
+          <tr><th>지표</th><th>현재</th><th>목표</th><th>시점</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>산출물 일관성 점수</td><td>62</td><td>90</td><td>Q4</td></tr>
+          <tr><td>핸드오프 리드타임</td><td>5.2일</td><td>2.0일</td><td>Q3</td></tr>
+          <tr><td>재작업 비율</td><td>28%</td><td>10%</td><td>Q4</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- G — footer -->
+    <div class="report__footer">
+      VinylC · Practical UX — 가장 쓸모있는 경험을 디자인합니다 · v1.0 · 2026.06
+    </div>
+  </div>
+</div>
+</body>
+</html>

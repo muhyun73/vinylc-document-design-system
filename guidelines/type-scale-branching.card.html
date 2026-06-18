@@ -1,0 +1,39 @@
+<!-- @dsCard group="Type" viewport="700x200" name="표시유형별 스케일 분기" subtitle="동일 컴포넌트, 컨테이너가 스케일 결정 (문서 / 슬라이드 / 1P)" -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="../styles.css" />
+<style>
+  body { margin: 0; font-family: var(--font-family); background: var(--white); }
+  .wrap { padding: 20px 24px; display: grid; grid-template-columns: repeat(3,1fr); gap: 18px; }
+  .col { border-left: 2px solid var(--black); padding-left: 14px; }
+  .scope { font-size: 11px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: var(--gray-400); margin-bottom: 12px; }
+  .h { font-weight: 700; line-height: 1.1; margin-bottom: 6px; color: var(--text-primary); }
+  .b { line-height: 1.6; color: var(--text-secondary); }
+  .px { font-size: 10px; color: var(--gray-400); margin-top: 2px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="col report">
+    <div class="scope">연속문서형 · .report</div>
+    <div class="h" style="font-size:var(--fs-h1)">제목</div>
+    <div class="b" style="font-size:var(--fs-body)">본문 텍스트 16 / 1.7</div>
+    <div class="px">h1 34 · body 16 · lh 1.7</div>
+  </div>
+  <div class="col slide">
+    <div class="scope">프리젠테이션형 · .slide</div>
+    <div class="h" style="font-size:var(--fs-h1)">제목</div>
+    <div class="b" style="font-size:var(--fs-body)">본문 텍스트 17 / 1.5</div>
+    <div class="px">h1 40 · body 17 · lh 1.5</div>
+  </div>
+  <div class="col slide is-onepager">
+    <div class="scope">1페이지형 · 1P</div>
+    <div class="h" style="font-size:var(--fs-h1)">제목</div>
+    <div class="b" style="font-size:var(--fs-body)">본문 텍스트 11 / 1.5</div>
+    <div class="px">h1 22 · body 11 · 압축</div>
+  </div>
+</div>
+</body>
+</html>

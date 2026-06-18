@@ -1,0 +1,27 @@
+<!-- @dsCard group="Brand" viewport="700x180" name="심볼 (재업로드 필요)" subtitle="invertToWhite 필터 구조 보존 · PNG 데이터 누락" -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="../styles.css" />
+<style>
+  body { margin: 0; font-family: var(--font-family); background: var(--white); }
+  .wrap { display: flex; align-items: center; gap: 28px; padding: 26px 30px; }
+  .ph { width: 92px; height: 92px; flex: none; border: 1px dashed var(--gray-300); display: flex; align-items: center; justify-content: center; color: var(--gray-400); font-size: 11px; text-align: center; line-height: 1.4; background: var(--gray-50); }
+  .info h4 { margin: 0 0 8px; font-size: 14px; font-weight: 600; color: var(--text-primary); }
+  .info p { margin: 0; font-size: 12px; line-height: 1.6; color: var(--text-secondary); }
+  .info .note { margin-top: 10px; font-size: 11px; color: var(--gray-500); border-left: 3px solid var(--black); padding-left: 10px; }
+  code { font-family: var(--font-mono); font-size: .9em; background: var(--gray-100); padding: 1px 5px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="ph">SYMBOL<br/>data 누락</div>
+  <div class="info">
+    <h4>심볼 SVG — 결정형 자산 (공통 4자산)</h4>
+    <p>표지 64px / 헤더 28px 로 파라미터화. <code>invertToWhite</code> feColorMatrix 필터로 검정 배경에서 코너 잔상 없이 흰색 반전.</p>
+    <p class="note">업로드된 <code>symbol-black.svg</code> / <code>symbol-white.svg</code> 의 내부 <code>&lt;image&gt;</code> base64 PNG 데이터가 비어 있습니다. 원본 심볼 PNG를 다시 업로드해 주세요.</p>
+  </div>
+</div>
+</body>
+</html>

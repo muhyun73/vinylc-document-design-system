@@ -1,0 +1,25 @@
+<!-- @dsCard group="Brand" viewport="700x180" name="워드마크" subtitle="VINYL C — 밝은 배경 / 어두운 배경 분리 파일" -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="../styles.css" />
+<style>
+  body { margin: 0; font-family: var(--font-family); }
+  .wrap { display: grid; grid-template-columns: 1fr 1fr; height: 180px; }
+  .cell { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 14px; }
+  .light { background: var(--white); }
+  .dark { background: var(--black-deep); }
+  .cell img { height: 30px; }
+  .lbl { font-size: 10px; letter-spacing: .1em; text-transform: uppercase; }
+  .light .lbl { color: var(--gray-400); }
+  .dark .lbl { color: var(--gray-500); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="cell light"><img src="../assets/wordmark-black.png" alt="VINYL C" /><span class="lbl">wordmark-black · 본문 푸터</span></div>
+  <div class="cell dark"><img src="../assets/wordmark-white.png" alt="VINYL C" /><span class="lbl">wordmark-white · 클로징</span></div>
+</div>
+</body>
+</html>

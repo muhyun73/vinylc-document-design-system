@@ -1,0 +1,25 @@
+<!-- @dsCard group="Type" viewport="700x230" name="본문 스케일 (연속문서형)" subtitle="body-lg / body / body-sm / caption / overline (.report)" -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="../styles.css" />
+<style>
+  body { margin: 0; background: var(--white); }
+  .report { background: var(--white); }
+  .wrap { padding: 22px 28px; }
+  .line { display: flex; align-items: baseline; gap: 16px; border-bottom: 1px solid var(--gray-100); padding: 7px 0; }
+  .tag { font-size: 10px; color: var(--gray-400); width: 110px; flex: none; letter-spacing: .04em; }
+  .s { color: var(--text-secondary); line-height: 1.7; }
+</style>
+</head>
+<body>
+<div class="report"><div class="wrap">
+  <div class="line"><span class="tag">body-lg · 18</span><span class="s" style="font-size:var(--fs-body-lg)">리드 문단 — 가장 쓸모있는 경험을 디자인합니다.</span></div>
+  <div class="line"><span class="tag">body · 16 / 1.7</span><span class="s" style="font-size:var(--fs-body)">본문 기준 — 정독을 위한 16px 1.7 행간.</span></div>
+  <div class="line"><span class="tag">body-sm · 14</span><span class="s" style="font-size:var(--fs-body-sm)">보조 본문 · 카드 설명 텍스트.</span></div>
+  <div class="line"><span class="tag">caption · 13</span><span class="s" style="font-size:var(--fs-caption)">캡션 · 페이지 번호 · 메타 정보.</span></div>
+  <div class="line"><span class="tag">overline · 11</span><span class="s" style="font-size:var(--fs-overline);text-transform:uppercase;letter-spacing:.1em;font-weight:600">SECTION LABEL</span></div>
+</div></div>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!-- @dsCard group="프리젠테이션형 (Slides)" viewport="1280x720" name="프리젠테이션형 덱" subtitle="1280×720 고정 · cover / content / closing" -->
+<!-- @startingPoint section="Report" subtitle="프리젠테이션형 슬라이드 (PDF · HTML · pptx)" viewport="1280x720" -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<title>프리젠테이션형 덱 — VinylC</title>
+<link rel="stylesheet" href="../../styles.css" />
+<style>
+  body.slide-doc { display: flex; flex-direction: column; align-items: center; gap: 24px; padding: 24px 0; }
+</style>
+</head>
+<body class="slide-doc">
+
+  <!-- 표지 -->
+  <section class="slide slide--cover" data-screen-label="슬라이드 표지">
+    <div class="cover__symbol" aria-hidden="true"><img src="../../assets/symbol-white.svg" alt="" /></div>
+    <h1 class="cover__title">2025 UX 트렌드</h1>
+    <p class="cover__subtitle">핵심 인사이트 · AI디자인연구소</p>
+    <div class="cover__line"></div>
+  </section>
+
+  <!-- 본문 -->
+  <section class="slide" data-screen-label="슬라이드 본문">
+    <div class="slide__section-label">01 — OVERVIEW</div>
+    <h2 class="section__title">전환의 세 축</h2>
+    <div class="card-grid mt-md" style="flex:1;align-content:start">
+      <div class="grid-card">
+        <span class="tag grid-card__tag">도구</span>
+        <h3 class="grid-card__title">도구 일원화</h3>
+        <p class="grid-card__body">단일 디자인 시스템 SSOT를 중심으로 도구를 정렬한다.</p>
+      </div>
+      <div class="grid-card">
+        <span class="tag grid-card__tag">프로세스</span>
+        <h3 class="grid-card__title">토큰 핸드오프</h3>
+        <p class="grid-card__body">토큰·컴포넌트 계약으로 재작업을 줄인다.</p>
+      </div>
+      <div class="grid-card grid-card--dark">
+        <span class="tag grid-card__tag">역량</span>
+        <h3 class="grid-card__title">AI 워크플로</h3>
+        <p class="grid-card__body">프롬프트·검증 루프를 팀 표준으로 내재화한다.</p>
+      </div>
+    </div>
+    <div class="callout"><div class="callout__body">표시유형 ↔ 컨테이너는 1:1. 슬라이드는 1280×720 고정 캔버스를 유지한다.</div></div>
+    <span class="slide__page-num">02</span>
+  </section>
+
+  <!-- 클로징 -->
+  <section class="slide slide--closing" data-screen-label="슬라이드 클로징">
+    <img class="closing__wordmark" src="../../assets/wordmark-white.png" alt="VINYL C" />
+    <div class="closing__line"></div>
+    <p class="closing__slogan">Practical UX</p>
+    <p class="closing__slogan-kr">가장 쓸모있는 경험을 디자인합니다</p>
+  </section>
+
+</body>
+</html>

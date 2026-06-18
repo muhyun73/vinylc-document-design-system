@@ -1,0 +1,28 @@
+<!-- @dsCard group="Spacing" viewport="700x180" name="여백 원시 풀" subtitle="3xs 4 → 2xl 96 (공통, 1P 에서 sm/md/lg 압축 override)" -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="../styles.css" />
+<style>
+  body { margin: 0; font-family: var(--font-family); background: var(--white); }
+  .wrap { padding: 24px 28px; display: flex; flex-direction: column; gap: 10px; }
+  .row { display: flex; align-items: center; gap: 14px; }
+  .tag { font-size: 11px; color: var(--gray-500); width: 130px; flex: none; }
+  .tag b { color: var(--text-primary); font-weight: 600; }
+  .bar { height: 16px; background: var(--black); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="row"><span class="tag"><b>3xs</b> · 4px</span><span class="bar" style="width:4px"></span></div>
+  <div class="row"><span class="tag"><b>2xs</b> · 6px</span><span class="bar" style="width:6px"></span></div>
+  <div class="row"><span class="tag"><b>xs</b> · 8px</span><span class="bar" style="width:8px"></span></div>
+  <div class="row"><span class="tag"><b>sm</b> · 16px</span><span class="bar" style="width:16px"></span></div>
+  <div class="row"><span class="tag"><b>md</b> · 24px</span><span class="bar" style="width:24px"></span></div>
+  <div class="row"><span class="tag"><b>lg</b> · 40px</span><span class="bar" style="width:40px"></span></div>
+  <div class="row"><span class="tag"><b>xl</b> · 64px</span><span class="bar" style="width:64px"></span></div>
+  <div class="row"><span class="tag"><b>2xl</b> · 96px</span><span class="bar" style="width:96px"></span></div>
+</div>
+</body>
+</html>
